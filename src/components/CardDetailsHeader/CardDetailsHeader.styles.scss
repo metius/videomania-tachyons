@@ -1,0 +1,68 @@
+.card_details_header {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+ 
+  &__poster {
+    //Poster will be 1/3 of the length
+    flex: 1 1 33.333333333333%;
+    // border: 1px solid orange;
+    padding: 5px;
+    text-align: center;
+    background-color: #222222;
+
+    & img {
+      border-radius: 5px;
+      //box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  }
+
+  &__info {
+    //info will be 2/3 of the length
+    flex: 3 1 66.666666666666%;
+    // border: 1px solid blue;
+    padding: 4rem;
+    background-color: #222222;
+    color: #eeeeee;
+    text-align: left;
+
+    
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  &__tagline {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  &__details {
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+
+  &__year {
+    margin-right: 3rem;
+  }
+
+  &__runtime {
+    margin-right: 3rem;
+  }
+
+  &__genres {
+
+  }
+
+
+  &__description {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}

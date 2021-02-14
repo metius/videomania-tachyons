@@ -1,0 +1,61 @@
+h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+
+  &-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > * {
+      flex: 1 1 auto;
+    }
+  }
+
+  &-title {
+    width: 80%;
+    min-height: 5rem;
+    margin-bottom: .75rem;
+  }
+}
+
+.movie_card {
+  width: 30rem;
+  margin: 14px;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+
+  & img {
+    height: 44rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  &-img {
+    width: 100%;
+  }
+}
+
+.movie_info {
+  display: flex;
+  justify-content: space-between;
+  color: #5e5c5c;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,87 @@
+a {
+  text-decoration: none;
+  color: #5C7FB8
+}
+
+a:hover {
+  //we can add a transform or something (a showdow perhaps?)
+}
+
+.movie-card {
+  font: 14px/32px "Lato", Arial, sans-serif;
+  color: #A9A8A3;
+  padding: 40px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 128rem;
+  height: 64rem;
+  background: #F0F0ED;
+  border-radius: 5px;
+  position: relative;
+}
+
+.hero {
+  height: 34.2rem;  
+  margin:0;
+  position: relative;
+  overflow: hidden;
+  z-index:1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+    
+}
+
+.cover {
+  position: absolute;
+  top: 16rem;
+  left: 4rem;
+  z-index: 2;
+}
+
+.details {
+  
+  padding: 19rem 0 0 28rem;
+  
+  
+  .title1 {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    
+    span {
+      position: absolute;
+      top: 3px;
+      margin-left: 1.2rem;
+      background: #C4AF3D;
+      border-radius: .5rem;
+      color: #544C21;
+      font-size: 1.4rem;
+      padding: 0px 4px;
+      
+    }
+  }
+
+  .tagline {    
+    color: #C7C1BA;
+    font-size: 2rem;    
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .likes {
+    margin-left: 24px;
+  }
+  
+  
+  .likes:before {
+    content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+    position: relative;
+    top: 2px;
+    padding-right: 7px;
+  }
+
+}
