@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 *,
 *::after,
@@ -19,14 +23,32 @@ body {
 
 html {
 	/* this define what 1rem is  */
-	/* font-size: 62.5%;	 */
+	font-size: 62.5%;	
 
+	/* @include respond(phone) {
+		font-size: 50%;
+	} */
+
+	@include respond(tab-land) {	
+		font-size: 56.25%;		
+	}
+
+	@include respond(tab-port) {	
+		font-size: 50%;		
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%;			
+	}
 }
 
 body {
 	box-sizing: border-box;
 	padding: 3rem;
 
+	@include respond(tab-port) {	
+		padding: 0;
+	}
 }
 
 /* ::selection {
@@ -41,4 +63,9 @@ body {
 	/*font-size: 16px;*/
 	line-height: 1.7;
 	/* color: $color-grey-dark; */
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
