@@ -7,7 +7,7 @@ import MovieListPage from './pages/MovieListPage/MovieListPage.component';
 import PersonCardPage from './pages/PersonCardPage/PersonCardPage.component';
 import Footer from './components/Footer/Footer.component';
 
-import './App.css';
+// import './App.css';
 
 const App = () => {
   return (
