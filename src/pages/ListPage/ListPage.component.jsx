@@ -4,7 +4,7 @@ import MoviePopular2 from '../../components/MoviePopular/MoviePopular2.component
 import {getMoviePopular} from '../../utils/utilities';
 
 const ListPage = (props) => {
-  //based on the props.match.path variable we will load the appropriate component (with the approrpiete API query)
+  //based on the props.match.url variable we will load the appropriate component (with the approrpiete API query)
   console.log(props);
   const url = props.match.url;
   console.log("URL:", url);
@@ -16,7 +16,7 @@ const ListPage = (props) => {
       break;
   
     default:
-      ListComponent = MoviePopular2;
+      ListComponent = MoviePopular2; //test 
       break;
   }
 
