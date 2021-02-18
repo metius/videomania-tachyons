@@ -7,6 +7,11 @@ export const getReleaseYear = (releaseDate) => {
   return releaseDate.slice(0,4);
 }
 
+//get list of Popular Now movie (for home page)
+export const getMoviePopular = () => {
+  return `${TMDB_URL}movie/popular?${TMDB_KEY}&language=en-US&page=1`;
+}
+
 //11/02/2021 - need to add extra apped_to_respond (see Postman) for:
 //  · external_ids,recommendations,watch/providers
 export const getMovieDetailsUrl = (movieId) => {

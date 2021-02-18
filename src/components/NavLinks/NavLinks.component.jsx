@@ -1,13 +1,25 @@
 import React from 'react';
-import './NavLinks.styles.scss';
+import {Link} from 'react-router-dom';
+// import './NavLinks.styles.scss';
 
-const NavLinks = () => { /* I can eventually create an extra LINK personal component to reuse it. I will see*/
+const NavLinks = () => { 
+  // <span className="link dim white-70 f5 f5-ns dib mr3" title="Home">Movies</span>
+  
   return(
-    <div>
-      <a href='#Link1'>Link1</a>
-      <a href='#Link2'>Link1</a>
-      <a href='#Link3'>Link1</a>
-    </div>
+    <>
+      <Link to='/'>
+        <span className="f4 fw4 hover-white no-underline white-70 dn dib-ns mr3 pt2" title="Home">Movies</span>
+      </Link>
+      <Link to='/'>
+        <span className="f4 fw4 hover-white no-underline white-70 dn dib-ns mr3 pt2" title="About">TV-Shows</span>
+      </Link>
+      <Link to='/'>
+        <span className="f4 fw4 hover-white no-underline white-70 dn dib-ns mr3 pt2" title="Store">People</span>
+      </Link>
+      <Link to='/'>
+        <span className="f4 fw4 hover-white no-underline white-70 dn dib-ns pt2" title="Contact">Contact</span>
+      </Link>
+    </>
   )
 }
 

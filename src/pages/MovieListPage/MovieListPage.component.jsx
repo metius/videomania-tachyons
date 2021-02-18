@@ -32,7 +32,7 @@ class MovieListPage extends Component {
   //Also need to consider what to shwo in home page -> let's make work the link to the card page for now
   //also will need to change from MoviePopular to MovieList and research the populars (now embedded in MoviePopular component)
   render() {
-    //console.log(this.props);
+    console.log(this.props);
     const config = this.state;
     return(
       <MoviePopular config={config} />
