@@ -9,7 +9,7 @@ const NavSignInSignOut = () => {
         */}
   return (
     <Link to='/sign-in'>
-      <span class="f4 fw4 hover-white no-underline white-70 dn dib-ns mr3 pt2" href="#0">Sign In</span> 
+      <span className="f4 fw4 hover-white no-underline white-70 dn dib-ns mr3 pt2" href="#0">Sign In</span> 
     </Link>
   )
 }

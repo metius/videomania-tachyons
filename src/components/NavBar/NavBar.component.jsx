@@ -13,7 +13,7 @@ const NavBar = () => {
         <NavLinks /> 
       </div>
 
-      <div class="flex-grow pa3 flex items-center">
+      <div className="flex-grow pa3 flex items-center">
         <NavSignInSignOut />
         <NavSearchBar />
       </div>
