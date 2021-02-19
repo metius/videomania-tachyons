@@ -1,10 +1,12 @@
+//component to test different hover effects
+
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-import {M_POSTER} from '../../utils/constants';
+import {M_POSTER, L_POSTER, S_BACKDROP, M_BACKDROP} from '../../utils/constants';
 import {getImgPath} from '../../utils/utilities';
 
-const ListCollectionItem = ({item}) => {
+const ListCollectionItemTest = ({item}) => {
   console.log(item);
   const id = item.id;
   const title = item.title;
@@ -18,12 +20,18 @@ const ListCollectionItem = ({item}) => {
   //const genres = getGenres(item.genre_ids);
 
   //for change hover effects (and put maybe overview?) -> Reveal Children on Hover https://tachyons.io/docs/themes/hovers/#
+
+  //<img src={poster} alt={title} className="w-100 db outline black-10 br2"/>
   
   return(
     <div className="fl w-50 w-25-m w-20-l pa2">
-      <Link to={`/card/${id}`} className="db link dim tc">
-        <img src={poster} alt={title} className="w-100 db outline black-10 br2"/>
-        <span className="child"></span>
+      <Link 
+        to={`/card/${id}`} 
+        className="db link dim tc contain bg-center"
+        style={{backgroundImage: `url(${poster})`}}  
+      >
+        
+        
         <dl className="mt2 f6 lh-copy">  
           <dt className="clip">Title</dt>
           <dd className="ml0 black truncate w-100">{title}</dd>
@@ -35,4 +43,4 @@ const ListCollectionItem = ({item}) => {
   )
 }
 
-export default ListCollectionItem;
+export default ListCollectionItemTest;

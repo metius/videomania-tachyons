@@ -1,5 +1,6 @@
 import React from 'react';
 import ListCollectionItem from '../ListCollectionItem/ListCollectionItem.component';
+import ListCollectionItemTest from '../ListCollectionItem/ListCollectionItemTest.component';
 
 const ListCollection = ({listTitle, collection}) => {
 
