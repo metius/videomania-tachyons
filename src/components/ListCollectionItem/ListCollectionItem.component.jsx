@@ -5,7 +5,7 @@ import {M_POSTER} from '../../utils/constants';
 import {getImgPath} from '../../utils/utilities';
 
 const ListCollectionItem = ({item}) => {
-  console.log(item);
+  // console.log(item);
   const id = item.id;
   const title = item.title;
   const releaseYear = item.release_date.slice(0,4);

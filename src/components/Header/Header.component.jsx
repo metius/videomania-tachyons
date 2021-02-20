@@ -8,7 +8,7 @@ const Header = () => {
   return(
     <header>
       <div className="cover bg-left bg-center-l" style={{backgroundImage: `url(${BgImg})`}}>
-        <div class="bg-black-80 ">
+        <div className="bg-black-80 ">
           <NavBar />
         </div>
       </div>
