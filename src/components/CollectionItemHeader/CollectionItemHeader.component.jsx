@@ -10,8 +10,6 @@ const CollectionItemHeader = ({title, tagline, overview, genres, releaseYear, du
     }
     return acc + `${genre.name}, `;
   },"");
-
-  console.log(genresList);
   
   return(
     <div className="cover bg-left bg-center-l" style={{backgroundImage: `url(${backdrop})`}}>
@@ -23,7 +21,7 @@ const CollectionItemHeader = ({title, tagline, overview, genres, releaseYear, du
                 <img src={poster} className="db" alt={title} />
               </div>
               <div className="w-100 w-60-ns pl3-ns mr6 white-90">
-                <h1 className="f1 fw4 mt0 mb0 lh-title">{title} · <span className="fs2 fw3 ">({releaseYear})</span></h1>
+                <h1 className="f1 fw4 mt0 mb0 lh-title">{title} <small className="fw3 fs2 ">({releaseYear})</small></h1>
                 <h2 className="f3 fw3 i mt3 lh-title">{tagline}</h2>
                 <p className="f5 f4-l mt4 lh-copy ">
                   {overview}

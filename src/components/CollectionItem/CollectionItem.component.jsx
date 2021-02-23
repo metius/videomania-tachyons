@@ -31,7 +31,7 @@ const CollectionItem = (props) => {
   const poster = getImgPath(data.poster_path, M_POSTER) ; 
   const backdrop = getImgPath(data.backdrop_path, L_BACKDROP);
 
-  const cast = data.cast;
+  const cast = data.credits.cast;
   return(
     // I still prefer to divide in smalled chuncks: header, cast, etc...
     //header will contains: title, images, overview, rate, and later on list of streaming available (if it is a movie/tv-show - we should use the collectionItem component also as a start for other collections (people))
@@ -46,7 +46,7 @@ const CollectionItem = (props) => {
         poster={poster}
         backdrop={backdrop}
       />
-      <CollectionItemCast />
+      <CollectionItemCast cast={cast} />
     </main>
   )
 }
